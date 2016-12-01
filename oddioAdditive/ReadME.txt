@@ -1,4 +1,4 @@
-Additive Synthesiser w/ Visualizer 
+Additive Synthesiser 
 
 Topics Covered:
 
