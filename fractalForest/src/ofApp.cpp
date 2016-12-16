@@ -102,7 +102,7 @@ void ofApp::draw()
     for(int p=0; p<800; p++)
     {
         
-        odd=ofMap(fftSmooth[p%65], 0, 1, 0,50);
+        odd=ofMap(fftSmooth[p%65], 0, 1, 0,30);
         oddB=ofMap(fftSmooth[p%65], 0, 1, 0,10);
         col=ofMap(fftSmooth[p%65], 0, 1, 0,255);
         
@@ -110,14 +110,14 @@ void ofApp::draw()
         drop[p].draw(oddB+10, oddB);
         
         ofPushMatrix();
-        if(p%2==0)
+        if(p%2==0||p%5==0)
         {
             ofNoFill();
             ofSetColor(120,col+43,col,70);
         }
         else
         {
-            ofSetColor(120,col+43,col,odd);
+            ofSetColor(120,col+43,col,odd-10);
         }
        
         ofDrawCircle(200, 170, odd);
