@@ -120,7 +120,7 @@ void ofApp::draw()
             ofSetColor(120,col+43,col,odd-10);
         }
        
-        ofDrawCircle(200, 170, odd);
+        ofDrawCircle(220, 180, odd);
         
         ofPopMatrix();
     }
