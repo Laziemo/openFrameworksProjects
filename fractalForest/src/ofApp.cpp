@@ -77,7 +77,7 @@ void ofApp::update()
         {
             fftSmooth[i]=value[i];
             
-            //This is why high rates create less circle due to less smoothing, and low rates create many circles each representing a band of the FFT ("the true signal"). A lot like compression theory.
+            //This is why high rates create less circles due to less smoothing, and low rates create many circles each representing a band of the FFT ("the true signal"). A lot like compression theory.
         }
         
         
