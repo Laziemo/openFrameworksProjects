@@ -8,6 +8,10 @@ void ofApp::setup()
     ofSetCircleResolution(100);
     ofSetFrameRate(60);
     
+    
+    
+    
+
 
     oscParameters.setName("Oscillator Controls");
     oscParameters.add(freakuency.set("Freakuency",192, 20, 2000));
@@ -15,6 +19,7 @@ void ofApp::setup()
     
     gui.setup(oscParameters);
     
+    ofxGuiSetFont("Xenotron.ttf", 8);
     
     sampleRate=48000;
     
@@ -51,7 +56,23 @@ void ofApp::draw()
     
 
     ofSetColor(ofRandom(256), ofRandom(256), ofRandom(256), 92);
+    ofFill();
     ofDrawCircle(x, y, r);
+    
+    ofNoFill();
+    ofSetLineWidth(5);
+    ofDrawCircle(x, y, r);
+    
+    ofSetColor(ofRandom(256), ofRandom(256), ofRandom(256), 192);
+    
+    ofSetLineWidth(2);
+    ofDrawCircle(x, y, r/1.2);
+    
+    ofSetLineWidth(3);
+    ofDrawCircle(x, y, r/2);
+    
+    ofSetLineWidth(4);
+    ofDrawCircle(x, y, r/3);
     
     
     
